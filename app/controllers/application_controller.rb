@@ -14,10 +14,10 @@ class App < Sinatra::Base
       @team = Team.new({name: params[:team][:name], motto: params[:team][:motto]})
 
       @heroes = params[:team][:members].collect do |team_member|
-        @team[:members] << Hero.new(team_member)
+        @team.members << Hero.new(team_member)
       end
       binding.pry
-      
+
       erb :teams
     end
 end
