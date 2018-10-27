@@ -1,5 +1,5 @@
 class Hero
-  attr_accessor :name, :power, :bio, :team
+  attr_accessor :name, :power, :biography, :team
 
   def initialize(hero_data = {})
     @name = hero_data[:name] || nil
