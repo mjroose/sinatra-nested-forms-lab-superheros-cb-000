@@ -9,4 +9,12 @@ class App < Sinatra::Base
     get '/' do
       erb :super_hero
     end
+
+    post '/teams' do
+      @heroes = params[:team][:members].collect do |team_member|
+        Hero.new(team_member)
+      end
+      binding.pry
+      erb :teams
+    end
 end
