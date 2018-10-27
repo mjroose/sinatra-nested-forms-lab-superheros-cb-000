@@ -19,13 +19,13 @@
     </p>
 
     <p>
-      <label for="hero_power_1">Hero's Power: </label>
-      <input type="text" id="hero_power_1" name="team[members][][power]">
+      <label for=<%= "hero_power_#{i}" %>>Hero's Power: </label>
+      <input type="text" id=<%= "hero_power_#{i}" %> name="team[members][][power]">
     </p>
 
     <p>
-      <label for="hero_bio_1">Hero's Biography: </label>
-      <input type="text" id="hero_bio_1" name="team[members][][bio]">
+      <label for=<%= "hero_bio_#{i}" %>>Hero's Biography: </label>
+      <input type="text" id=<%= "hero_bio_#{i}" %> name="team[members][][bio]">
     </p>
   <% end %>
   
