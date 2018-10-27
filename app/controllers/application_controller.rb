@@ -11,10 +11,12 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
+      new_team = Team.new(params[:team])
+      
       @heroes = params[:team][:members].collect do |team_member|
         Hero.new(team_member)
       end
-      binding.pry
+      
       erb :teams
     end
 end
