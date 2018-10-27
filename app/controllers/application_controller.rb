@@ -19,7 +19,7 @@ class App < Sinatra::Base
         @team.members << hero
         hero.team = @team
       end
-      
+      binding.pry
 
       erb :teams
     end
