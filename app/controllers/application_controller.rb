@@ -21,6 +21,6 @@ class App < Sinatra::Base
       end
       binding.pry
 
-      erb :teams
+      erb :team
     end
 end
